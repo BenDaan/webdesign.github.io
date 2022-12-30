@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tandarts Afspraak</title>
+  <body>
+    <h1>Tandarts Afspraak</h1>
+    <p>Voer hier uw gegevens in met desbetreffende tijd wanneer u de afspraak wilt hebben.</p>
+    <img src="poetsen.jpg" alt="" height="130" width="300">
+    <img src="happy-tand.jpg" alt="" height="130" width="300">
+    <img src="slechte-tanden.jpg" alt="" height="130" width="300">
+    <form id="contactform" action="https://formspree.io/f/xrgdqlbg" method="post"">
+<fieldset>
+  <legend>Persoonlijke Gegevens </legend>
+  <table width="600" border="0">
+    <tbody>
+      <tr>
+        <td width="200"><b>Uw adres</b>
+        </td>
+        <td width="400">
+        <input type="text" name="adres" placeholder="Straatnaam en huisnummer">
+      </td>
+      </tr>
+      <tr>
+        <td><b>Uw leeftijd</b>
+        </td>
+        <td><input type="number" name="leeftijd" min="1" max="100">
+          </td>
+      </tr>
+      <tr>
+      <td><b>Uw e-mailadres</b>
+      </td>
+      <td><input type="email" name="emailadres" placeholder="E-Mail">
+      </td>
+      </tr>
+      <tr>
+        <td><b>Uw telefoonnummer</b>
+        </td>
+        <td><input type="tel" name="telefoonnummer" placeholder="met 06">
+        </td>
+      </tr>
+      <tr>
+        <td><b>Uw geboortedatum</b>
+        </td>
+        <td><input type="date" name="datum" max="2100-12-31">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</fieldset>
+<br>
+<br>
+
+<fieldset>
+  <legend>Uw klachten</legend>
+  <table width="600" border="0">
+<tbody>
+  <tr>
+  <td><b>selecteer de klachten die u heeft. geef minimaal 1 aan.</b></td>
+  </tr>
+  <td>
+    <input type="checkbox" name="klachten" value="kiespijn">kiespijn
+  </td>
+  <td>
+    <input type="checkbox" name="klachten" value="pijn koud">pijn bij koud eten of drinken
+  </td>
+  <td>
+    <input type="checkbox" name="klachten" value="pijn warm">pijn bij warm eten of drinken
+  </td>
+  <td>
+    <input type="checkbox" name="klachten" value="tandvlees pijn">pijn aan tandvlees
+   </td>
+   <tr>
+   <td><b>Selecteer uw foto`s</b></td>
+   <td><input type="file" name="document"></td>
+   </tr>
+ </table>
+</tbody>
+</fieldset>
+<br>
+<br>
+
+<fieldset>
+  <legend>leg uw klachten uit en kies een gwenste datum</legend>
+  <table width="600" border="0">
+<tbody>
+  <tr>
+<td><b>beschrijf uw klacht</b></td><br>
+<td><textarea name ="bericht" maxlength ="1500">
+</textarea></td></tr>
+<tr>
+  <td><b>Gewenste Afspraak</b>
+  </td>
+  <td><input type="date" name="datum" max="2100-12-31">
+  </td>
+<td><p><input type="submit" value="verzend"></p></td>
+</tr>
+</tbody>
+</fieldset>
+<br>
+<br>
+
+</form>
+</html>
